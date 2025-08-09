@@ -1,103 +1,12 @@
 @import "tailwindcss";
 
-@font-face {
-  font-family: 'Manrope';
-  src: url('./components/fonts/Manrope-ExtraLight.ttf') format('truetype');
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Manrope';
-  src: url('./components/fonts/Manrope-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Manrope';
-  src: url('./components/fonts/Manrope-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Manrope';
-  src: url('./components/fonts/Manrope-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Manrope';
-  src: url('./components/fonts/Manrope-SemiBold.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Manrope';
-  src: url('./components/fonts/Manrope-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Manrope';
-  src: url('./components/fonts/Manrope-ExtraBold.ttf') format('truetype');
-  font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'GeneralSans';
-  src: url('./components/fonts/GeneralSans-Extralight.otf') format('opentype');
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'GeneralSans';
-  src: url('./components/fonts/GeneralSans-Light.otf') format('opentype');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'GeneralSans';
-  src: url('./components/fonts/GeneralSans-Regular.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'GeneralSans';
-  src: url('./components/fonts/GeneralSans-Medium.otf') format('opentype');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'GeneralSans';
-  src: url('./components/fonts/GeneralSans-Semibold.otf') format('opentype');
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'GeneralSans';
-  src: url('./components/fonts/GeneralSans-Bold.otf') format('opentype');
-  font-weight: 700;
-  font-style: normal;
-}
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
   --primary: #65fd08;
-  --secondary: #16bc4e;
-  --font-family: 'Manrope', sans-serif;
-  --font-general-sans: 'GeneralSans', sans-serif;
+  --secondary: #08FD25;
+  --tertiory: #DFFD08;
+  --font-Manrope: var(--font-manrope);
 }
 
 @theme inline {
@@ -105,9 +14,9 @@
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
-  --font-sans: var(--font-family);
-  --font-general-sans: var(--font-general-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-tertiroy: var(--tertiory);
+  --font-Manrope: var(--font-manrope);
+  --font-Sora: var(--font-sora);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -116,8 +25,9 @@
     --foreground: #ededed;
     --primary: #65fd08;
     --secondary: #16bc4e;
+    --tertiory: #DFFD08;
     --font-family: 'Manrope', sans-serif;
-    --font-general-sans: 'GeneralSans', sans-serif;
+    --font-Manrope: var(--font-manrope);
   }
 }
 
