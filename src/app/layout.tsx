@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import{Manrope, Sora} from 'next/font/google';
 import "./globals.css";
 import Navbar from "./components/navbar";
+import Chatbot from "./chatbot/page";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -13,8 +14,8 @@ const sora = Sora({
 })
 
 export const metadata: Metadata = {
-  title: "SkillMatch",
-  description: "Find Projects That Fit Your skills",
+  title: "DovanX",
+  description: "Where Skills Meet Opportunities—AI",
 };
 
 export default function RootLayout({
@@ -24,9 +25,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${manrope.variable} ${sora.variable} antialiased`}>
-      <div className="sticky top-0 z-50 backdrop-blur-xs">
+      <body className={`${manrope.variable} ${sora.variable} antialiased`} >
+      <div className="sticky top-0 z-50 bg-background">
         <Navbar />
+      </div>
+      <div className=" sticky top-96" style={{width:'60px', left:'94vw', top:'86vh'}} >
+        <Chatbot />
       </div>
       {children}
       </body>

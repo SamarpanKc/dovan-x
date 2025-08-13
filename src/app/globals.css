@@ -3,8 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary: #65fd08;
-  --secondary: #08FD25;
+  --primary: #150335;
+  --secondary: #00C9A6;
   --tertiory: #DFFD08;
   --font-Manrope: var(--font-manrope);
 }
@@ -22,9 +22,9 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
-    --primary: #65fd08;
-    --secondary: #16bc4e;
+    --foreground: #FFEDE1;
+    --primary: #150335;
+    --secondary: #00C9A6;
     --tertiory: #DFFD08;
     --font-family: 'Manrope', sans-serif;
     --font-Manrope: var(--font-manrope);
@@ -35,4 +35,15 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-family);
+}
+
+/* Hide scrollbar for webkit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
